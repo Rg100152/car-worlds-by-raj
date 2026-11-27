@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120" role="img" aria-label="Car Worlds by Raj logo">
+  <defs>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E63946"/>
+      <stop offset="100%" stop-color="#ff6b6b"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00D4FF"/>
+      <stop offset="100%" stop-color="#7df9ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="520" height="120" rx="10" fill="#0a0d12"/>
+  <!-- Speedometer arc -->
+  <path d="M60 90 A50 50 0 0 1 160 90" fill="none" stroke="url(#cyanGrad)" stroke-width="6" stroke-linecap="round"/>
+  <line x1="110" y1="90" x2="145" y2="55" stroke="#E63946" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="110" cy="90" r="6" fill="#F4A261"/>
+  <!-- Car silhouette -->
+  <path d="M190 78 L210 58 L290 58 L310 78 L330 78 L330 88 L320 92 L200 92 L190 88 Z" fill="#c0c0c0" opacity="0.95"/>
+  <circle cx="220" cy="92" r="10" fill="#1a1a1a" stroke="#c0c0c0" stroke-width="2"/>
+  <circle cx="300" cy="92" r="10" fill="#1a1a1a" stroke="#c0c0c0" stroke-width="2"/>
+  <!-- Text -->
+  <text x="350" y="52" font-family="Arial Black, Impact, sans-serif" font-size="22" fill="#E63946" letter-spacing="1">CAR WORLDS</text>
+  <text x="350" y="78" font-family="Arial, sans-serif" font-size="16" fill="#00D4FF" letter-spacing="2">BY RAJ</text>
+</svg>
