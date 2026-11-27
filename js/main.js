@@ -33,3 +33,14 @@
     }
   }, 6000);
 })();
+
+(function(){
+  const toggle = document.getElementById('navToggle');
+  const links = document.getElementById('navLinks');
+  if(toggle && links){
+    toggle.addEventListener('click', ()=>{
+      const isOpen = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(isOpen));
+    });
+  }
+})();
