@@ -65,7 +65,7 @@
     grid.innerHTML = view.map(car => `
       <article class="car-card" tabindex="0" role="button" data-id="${car.id}">
         <div class="car-imgwrap">
-          <img class="car-img" src="${car.image}" alt="${car.name}" onerror="this.onerror=null;this.src='assets/images/cars/supercar-01.jpg';">
+          <img class="car-img" src="${car.image}" alt="${car.name}" loading="lazy" onerror="this.onerror=null;this.src='assets/images/cars/ferrari-sf90.jpg';">
           <span class="car-badge">${car.category}</span>
         </div>
         <div class="car-body">
@@ -197,7 +197,7 @@
     const posts = window.CarWorldsBlog.getAll();
     grid.innerHTML = posts.map(p=>`
       <article class="blog-card" tabindex="0" role="button" data-id="${p.id}">
-        <img class="blog-cover" src="${p.cover}" alt="${p.title}" onerror="this.onerror=null;this.src='assets/images/cars/luxury-01.jpg';">
+        <img class="blog-cover" src="${p.cover}" alt="${p.title}" loading="lazy" onerror="this.onerror=null;this.src='assets/images/cars/ferrari-sf90.jpg';">
         <div class="blog-body">
           <div class="blog-tags"><span class="tag">${p.category}</span><span class="muted small">${p.readTime}</span></div>
           <h3 class="blog-title">${p.title}</h3>

@@ -1,68 +1,70 @@
-/* Preloader styles */
 #preloader {
   position: fixed;
   inset: 0;
-  background: radial-gradient(1200px 600px at 20% 10%, rgba(230,57,70,0.12), transparent 60%),
-              radial-gradient(1000px 500px at 80% 80%, rgba(0,212,255,0.10), transparent 55%),
-              #07090D;
+  background:
+    linear-gradient(135deg, rgba(240,244,248,0.35), rgba(15,23,42,0.72)),
+    url('../assets/images/bg-wallpaper.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 9999;
   transition: opacity 0.6s ease, visibility 0.6s ease;
 }
-#preloader.hidden {
-  opacity: 0;
-  visibility: hidden;
-}
+#preloader.hidden { opacity: 0; visibility: hidden; }
 .preloader-inner {
   width: min(560px, 92vw);
   text-align: center;
-  padding: 28px 20px;
-  border: 1px solid rgba(255,255,255,0.08);
-  background: rgba(18, 22, 31, 0.72);
-  backdrop-filter: blur(16px);
-  border-radius: 18px;
+  padding: 30px 24px;
+  border: 1px solid rgba(255,255,255,0.35);
+  background: rgba(255,255,255,0.14);
+  backdrop-filter: blur(18px) saturate(160%);
+  -webkit-backdrop-filter: blur(18px) saturate(160%);
+  border-radius: 20px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.22);
 }
 .preloader-logo {
-  width: min(420px, 86vw);
+  width: min(320px, 70vw);
   height: auto;
   display: block;
-  margin: 0 auto 18px auto;
+  margin: 0 auto 16px auto;
+  filter: drop-shadow(0 4px 14px rgba(0,0,0,0.25));
 }
 .preloader-title {
   font-family: "Orbitron", "Rajdhani", Arial, sans-serif;
-  color: #E8EEF7;
-  letter-spacing: 1px;
+  color: #FFFFFF;
+  letter-spacing: 1.5px;
   font-size: 14px;
   margin: 0 0 14px 0;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
 .speedometer {
   width: 100%;
   height: 14px;
   border-radius: 999px;
-  background: rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.18);
   overflow: hidden;
-  border: 1px solid rgba(255,255,255,0.10);
+  border: 1px solid rgba(255,255,255,0.28);
 }
 .speedometer-bar {
   height: 100%;
   width: 0%;
   border-radius: 999px;
-  background: linear-gradient(90deg, #E63946, #F4A261, #00D4FF);
-  box-shadow: 0 0 18px rgba(0,212,255,0.35);
+  background: linear-gradient(90deg, #38BDF8, #FBBF24, #FB7185);
+  box-shadow: 0 0 18px rgba(56,189,248,0.35);
+  transition: width .2s ease;
 }
 .preloader-meta {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
   font-family: "Plus Jakarta Sans", "Inter", Arial, sans-serif;
-  color: rgba(232,238,247,0.75);
+  color: rgba(241,245,249,0.88);
   font-size: 12px;
+  font-weight: 700;
 }
 .preloader-hint {
   margin-top: 14px;
   font-family: "Plus Jakarta Sans", "Inter", Arial, sans-serif;
-  color: rgba(232,238,247,0.55);
+  color: rgba(241,245,249,0.72);
   font-size: 12px;
 }

@@ -25,7 +25,7 @@
       const price = currency === 'USD' ? car.priceUSD : car.priceINR;
       modal.querySelector('.modal-body').innerHTML = `
         <div class="modal-grid">
-          <img class="modal-img" src="${car.image}" alt="${car.name}" onerror="this.src='assets/images/cars/supercar-01.jpg'">
+          <img class="modal-img" src="${car.image}" alt="${car.name}" onerror="this.onerror=null;this.src='assets/images/cars/ferrari-sf90.jpg'">
           <div class="modal-specs">
             <p><span class="k">Brand</span><span class="v">${car.brand}</span></p>
             <p><span class="k">Category</span><span class="v">${car.category}</span></p>
@@ -46,7 +46,7 @@
       modal.querySelector('.modal-title').textContent = article.title;
       modal.querySelector('.modal-body').innerHTML = `
         <p class="blog-meta">${article.category} • ${article.readTime}</p>
-        <img class="modal-img" src="${article.cover}" alt="${article.title}" onerror="this.src='assets/images/cars/luxury-01.jpg'">
+        <img class="modal-img" src="${article.cover}" alt="${article.title}" onerror="this.onerror=null;this.src='assets/images/cars/ferrari-sf90.jpg'">
         <div class="modal-desc">${article.content}</div>
       `;
       modal.classList.add('open');
