@@ -152,3 +152,138 @@ a{color:inherit; text-decoration:none}
   }
   .nav-links.open{display:flex}
 }
+
+/* Explorer */
+.section-head{display:flex; align-items:flex-end; justify-content:space-between; gap:16px; flex-wrap:wrap}
+.currency-toggle{display:flex; border:1px solid var(--border); border-radius:14px; overflow:hidden; background:rgba(18,22,31,0.55)}
+.currency-btn{background:transparent; color:var(--muted); border:0; padding:10px 12px; cursor:pointer; font-weight:800}
+.currency-btn.active{color:var(--text); background:rgba(0,212,255,0.14)}
+.toolbar{display:grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap:12px; margin-top:16px}
+.input,.select{
+  width:100%;
+  padding:12px 12px;
+  border-radius:14px;
+  border:1px solid var(--border);
+  background:rgba(7,9,13,0.55);
+  color:var(--text);
+  outline:none;
+}
+.input::placeholder{color:rgba(232,238,247,0.45)}
+.input-sm{max-width:110px}
+.meta-row{display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; margin:14px 0 10px}
+.muted{color:var(--muted)}
+.small{font-size:12px}
+.cars-grid{display:grid; grid-template-columns: repeat(4, 1fr); gap:14px}
+.car-card{
+  border:1px solid var(--border);
+  background:rgba(18,22,31,0.62);
+  backdrop-filter: blur(16px);
+  border-radius:18px;
+  overflow:hidden;
+  cursor:pointer;
+  transition: transform .18s ease, border-color .18s ease;
+}
+.car-card:hover{transform: translateY(-3px); border-color: rgba(0,212,255,0.35)}
+.car-imgwrap{position:relative; aspect-ratio: 16/10; background:#0b0f16}
+.car-img{width:100%; height:100%; object-fit:cover; display:block; filter:saturate(1.05) contrast(1.05)}
+.car-badge{
+  position:absolute; top:10px; left:10px;
+  font-size:12px; font-weight:800;
+  padding:6px 10px;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,0.14);
+  background:rgba(7,9,13,0.55);
+  color:#e8eef7;
+}
+.car-body{padding:12px 12px 14px}
+.car-name{font-family:"Orbitron","Rajdhani",Arial,sans-serif; font-size:14px; margin:0 0 6px; line-height:1.25}
+.car-sub{margin:0 0 10px; color:var(--muted); font-size:12px}
+.car-specs{display:flex; flex-wrap:wrap; gap:8px; color:rgba(232,238,247,0.78); font-size:12px}
+.car-specs span{border:1px solid rgba(255,255,255,0.08); padding:4px 8px; border-radius:999px; background:rgba(7,9,13,0.35)}
+.car-price{margin-top:10px; font-weight:900; color:var(--gold)}
+.pager{display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap; margin-top:18px}
+.page-jump{display:flex; align-items:center; gap:8px}
+
+/* Blog */
+.blog-grid{display:grid; grid-template-columns: repeat(4, 1fr); gap:14px; margin-top:16px}
+.blog-card{
+  border:1px solid var(--border);
+  background:rgba(18,22,31,0.62);
+  backdrop-filter: blur(16px);
+  border-radius:18px;
+  overflow:hidden;
+  cursor:pointer;
+}
+.blog-cover{width:100%; aspect-ratio: 16/10; object-fit:cover; display:block}
+.blog-body{padding:12px}
+.blog-tags{display:flex; justify-content:space-between; align-items:center; gap:10px}
+.tag{font-size:12px; padding:4px 8px; border-radius:999px; border:1px solid rgba(0,212,255,0.35); color:var(--cyan); background:rgba(0,212,255,0.10)}
+.blog-title{font-family:"Orbitron","Rajdhani",Arial,sans-serif; font-size:14px; margin:10px 0 8px}
+.blog-excerpt{margin:0; color:var(--muted); font-size:13px; line-height:1.6}
+
+/* Modal */
+.modal-overlay{
+  position:fixed; inset:0;
+  display:none;
+  align-items:center; justify-content:center;
+  padding:18px;
+  background:rgba(0,0,0,0.55);
+  z-index:10000;
+}
+.modal-overlay.open{display:flex}
+.modal{
+  width:min(920px, 96vw);
+  border:1px solid var(--border);
+  background:rgba(18,22,31,0.86);
+  backdrop-filter: blur(18px);
+  border-radius:18px;
+  overflow:hidden;
+}
+.modal-head{display:flex; justify-content:space-between; align-items:center; padding:14px 14px; border-bottom:1px solid var(--border)}
+.modal-title{margin:0; font-family:"Orbitron","Rajdhani",Arial,sans-serif; font-size:16px}
+.modal-close{background:transparent; border:1px solid var(--border); color:var(--text); border-radius:10px; padding:8px 10px; cursor:pointer}
+.modal-body{padding:14px}
+.modal-grid{display:grid; grid-template-columns: 1.1fr 0.9fr; gap:14px}
+.modal-img{width:100%; border-radius:14px; border:1px solid rgba(255,255,255,0.08); object-fit:cover}
+.modal-specs p{display:flex; justify-content:space-between; gap:10px; padding:8px 0; border-bottom:1px solid rgba(255,255,255,0.06); margin:0}
+.modal-specs .k{color:var(--muted)}
+.modal-specs .v{font-weight:800}
+.modal-desc{color:var(--muted); line-height:1.7; margin-top:12px}
+.blog-meta{color:var(--muted); margin:0 0 10px}
+
+/* Help */
+.help-grid{display:grid; grid-template-columns: 1.2fr 0.8fr; gap:14px; margin-top:16px}
+.accordion-item{border:1px solid var(--border); border-radius:14px; overflow:hidden; background:rgba(18,22,31,0.55); margin-bottom:10px}
+.accordion-btn{width:100%; text-align:left; padding:12px 12px; background:transparent; color:var(--text); border:0; cursor:pointer; font-weight:800}
+.accordion-panel{display:none; padding:0 12px 12px; color:var(--muted); line-height:1.6}
+.accordion-item.open .accordion-panel{display:block}
+.help-form{padding:14px}
+.form-title{margin:0 0 10px; font-family:"Orbitron","Rajdhani",Arial,sans-serif}
+.label{display:block; margin:10px 0 6px; color:var(--muted); font-size:12px}
+textarea.input{resize:vertical}
+
+/* About */
+.about-card{padding:16px}
+.about-top{display:flex; gap:14px; align-items:flex-start}
+.about-avatar{width:64px; height:64px; border-radius:14px; border:1px solid var(--border); background:rgba(7,9,13,0.4)}
+.about-name{margin:0 0 6px; font-family:"Orbitron","Rajdhani",Arial,sans-serif}
+.handle{color:var(--cyan); font-weight:700}
+.about-line{margin:4px 0; color:var(--muted); line-height:1.6}
+.link{color:var(--cyan)}
+.about-stats{display:flex; gap:14px; flex-wrap:wrap; margin-top:14px}
+
+@media (max-width: 1000px){
+  .cars-grid{grid-template-columns: repeat(3, 1fr)}
+  .blog-grid{grid-template-columns: repeat(3, 1fr)}
+}
+@media (max-width: 720px){
+  .toolbar{grid-template-columns: 1fr}
+  .cars-grid{grid-template-columns: repeat(2, 1fr)}
+  .blog-grid{grid-template-columns: repeat(2, 1fr)}
+  .help-grid{grid-template-columns: 1fr}
+  .modal-grid{grid-template-columns: 1fr}
+}
+@media (max-width: 480px){
+  .cars-grid{grid-template-columns: 1fr}
+  .blog-grid{grid-template-columns: 1fr}
+}
