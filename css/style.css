@@ -185,7 +185,7 @@ a{color:inherit; text-decoration:none}
 }
 .car-card:hover{transform: translateY(-3px); border-color: rgba(0,212,255,0.35)}
 .car-imgwrap{position:relative; aspect-ratio: 16/10; background:#0b0f16}
-.car-img{width:100%; height:100%; object-fit:cover; display:block; filter:saturate(1.05) contrast(1.05)}
+.car-img{width:100%; height:100%; object-fit:cover; display:block; filter:saturate(1.05) contrast(1.05); background:#1a1f2a;}
 .car-badge{
   position:absolute; top:10px; left:10px;
   font-size:12px; font-weight:800;
